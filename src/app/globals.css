@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* styles/globals.css */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom CSS for border color change on click */
+.image-container {
+    border: 2px solid #ccc; /* Default light border color */
+    transition: all 0.3s ease; /* Smooth transition for border change */
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .image-container:focus-within {
+    border-color: #1D3557; /* Dark blue border color when clicked */
+  }
+  
+  .image-container:hover {
+    border-color:gray; /* Light gold border color on hover */
+  }
+  
