@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
+// import { CiLinkedin } from "react-icons/ci";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
