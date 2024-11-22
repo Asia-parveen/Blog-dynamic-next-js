@@ -21,7 +21,7 @@ const HomePage = () => {
             key={book.id}
             className="block border rounded-lg shadow-md hover:shadow-lg transition-all overflow-hidden bg-white image-container p-[10px] "
           >
-            {/* Wrapping everything inside Link */}
+           
             <Image
               src={book.image}
               alt={book.title}
