@@ -78,28 +78,28 @@ const NavBar = () => {
         <Link
           href="/"
           className="block text-white hover:text-gray-300 font-bold py-2"
-          onClick={() => setMenuOpen(false)} // Close the menu after clicking
+          onClick={() => setMenuOpen(false)} 
         >
           Home
         </Link>
         <Link
           href="/books"
           className="block text-white hover:text-gray-300 font-bold py-2"
-          onClick={() => setMenuOpen(false)} // Close the menu after clicking
+          onClick={() => setMenuOpen(false)} 
         >
          Books
         </Link>
         <Link
           href="/pen"
           className="block text-white hover:text-gray-300 font-bold py-2"
-          onClick={() => setMenuOpen(false)} // Close the menu after clicking
+          onClick={() => setMenuOpen(false)} 
         >
          Items
         </Link>
         <Link
           href="/contact"
           className="block text-white hover:text-gray-300 font-bold py-2"
-          onClick={() => setMenuOpen(false)} // Close the menu after clicking
+          onClick={() => setMenuOpen(false)} 
         >
           Contact
         </Link>

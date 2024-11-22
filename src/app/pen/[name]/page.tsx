@@ -12,15 +12,15 @@ type Props = {
 };
 
 const PenDetail = ({ params }: Props) => {
-  // Decode the URL-encoded name and replace hyphens with spaces
+ 
   const penName = decodeURIComponent(params.name.replace(/-/g, " "));
   
-  // Find the pen in the data array
+ 
   const pen = pens.find((pen) => pen.name.toLowerCase() === penName.toLowerCase());
 
-  // If the pen is not found, return a 404 page
+  
   if (!pen) {
-    return notFound(); // Return 404 page
+    return notFound(); 
   }
 
   return (

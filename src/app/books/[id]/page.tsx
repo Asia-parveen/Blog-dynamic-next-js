@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { books } from "../../../data/books";
 import { notFound } from "next/navigation";
@@ -7,10 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const BookDetails = ({ params }: { params: { id: string } }) => {
-  
-  const book = books.find((b) => b.id === (params.id));
+  const book = books.find((b) => b.id === params.id);
 
-  
   if (!book) return notFound();
 
   return (
@@ -53,4 +49,3 @@ const BookDetails = ({ params }: { params: { id: string } }) => {
 };
 
 export default BookDetails;
-
