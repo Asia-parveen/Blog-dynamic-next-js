@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "BookBlogs - Famous Books Blog",
+  title: "Asia | BookBlog",
   description: "Discover and explore the world's most famous books.",
 };
 
