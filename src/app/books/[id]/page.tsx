@@ -1,17 +1,15 @@
 import React from "react";
 import { books } from "../../../data/books";
-import { notFound } from "next/navigation";
+import { notFound } from "next/navigation"; 
 import Link from "next/link";
 import Image from "next/image";
 
 
-type BookDetailsProps = {
-  params: { id: string };
-};
+const BookDetails = async ({ params }: { params: { id: string } }) => {
 
-const BookDetails = ({ params }: BookDetailsProps) => {
   const book = books.find((b) => b.id === params.id);
 
+  
   if (!book) return notFound();
 
   return (
@@ -63,7 +61,12 @@ export default BookDetails;
 // import Link from "next/link";
 // import Image from "next/image";
 
-// const BookDetails = ({ params }: { params: { id: string } }) => {
+
+// type BookDetailsProps = {
+//   params: { id: string };
+// };
+
+// const BookDetails = ({ params }: BookDetailsProps) => {
 //   const book = books.find((b) => b.id === params.id);
 
 //   if (!book) return notFound();
@@ -108,3 +111,6 @@ export default BookDetails;
 // };
 
 // export default BookDetails;
+
+
+
