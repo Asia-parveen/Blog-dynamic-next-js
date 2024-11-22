@@ -23,7 +23,7 @@ const Contact = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // Clear error when user starts typing
+    setErrors({ ...errors, [name]: "" }); 
   };
 
   const validateForm = () => {
@@ -63,7 +63,7 @@ const Contact = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log("Form Submitted:", form); // For demonstration; replace with actual form submission logic
+      console.log("Form Submitted:", form); 
       setSubmitted(true);
       setForm({
         name: "",
@@ -156,7 +156,7 @@ const Contact = () => {
             </select>
             {errors.subject && <p className="text-red-500 text-sm">{errors.subject}</p>}
           </div>
-          {/* Message */}
+         
           <div>
             <label htmlFor="message" className="block text-sm font-semibold text-gray-700">
               Message
@@ -174,7 +174,7 @@ const Contact = () => {
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
-          {/* Submit Button */}
+         
           <div className="text-center">
             <button
               type="submit"
