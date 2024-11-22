@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Asia | BookBlog",
-  description: "Discover and explore the world's most famous books.",
+  description: "Explore the world's most famous books.",
 };
 
 export default function RootLayout({
